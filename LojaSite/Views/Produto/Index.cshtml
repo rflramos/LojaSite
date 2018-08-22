@@ -1,0 +1,51 @@
+﻿@model IEnumerable<LojaSite.Models.Produto>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_produto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nm_produto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vl_produto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.T_marca_id_marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.T_mercado_id_mercado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_produto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nm_produto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vl_produto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.T_marca_id_marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.T_mercado_id_mercado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
