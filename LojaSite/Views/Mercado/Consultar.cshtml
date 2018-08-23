@@ -1,0 +1,20 @@
+﻿@model LojaSite.Models.Mercado
+
+<div>
+    <h4>Mercado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nm_mercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nm_mercado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_mercado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
