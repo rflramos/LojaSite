@@ -19,5 +19,8 @@ namespace LojaSite.DAL.Context
         }
 
         public DbSet<Produto> Produto { get; set; }
+
+        public DbSet<Mercado> Mercado { get; set; }
+
     }
 }
