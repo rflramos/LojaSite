@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.T_mercado_id_mercado)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Editar", "Editar", new { id=item.Id_produto }) |
+            @Html.ActionLink("Consultar", "Consultar", new { id=item.Id_produto }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_produto })
         </td>
     </tr>
 }

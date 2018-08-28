@@ -1,0 +1,40 @@
+﻿@model LojaSite.Models.Mercado
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mercado</title>
+</head>
+<body>
+    <h1> MERCADO EDITAR </h1>
+
+    @using (Html.BeginForm("Editar", "Mercado"))
+    {
+        @Html.HiddenFor(model => model.Id_mercado)
+        <div class="form-horizontal">
+            <hr/>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Nm_mercado)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="salvar alteração" class="btn btn-default" />
+                </div>
+            </div>
+            <hr/>
+        </div>
+    }
+    <div>
+        @Html.ActionLink("Voltar", "Index", "Mercado")
+    </div>
+</body>
+</html>

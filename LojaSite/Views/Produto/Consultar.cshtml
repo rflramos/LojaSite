@@ -1,0 +1,44 @@
+﻿@model LojaSite.Models.Produto
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nm_produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nm_produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vl_produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vl_produto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T_mercado_id_mercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_mercado_id_mercado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T_marca_id_marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_marca_id_marca)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_produto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

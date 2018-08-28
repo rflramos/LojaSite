@@ -138,6 +138,11 @@
     <Content Include="Views\Mercado\Index.cshtml" />
     <Content Include="Views\Mercado\Consultar.cshtml" />
     <Content Include="Views\Mercado\Cadastrar.cshtml" />
+    <Content Include="Views\Produto\Consultar.cshtml" />
+    <Content Include="Views\Produto\Cadastrar.cshtml" />
+    <Content Include="Views\Produto\Editar.cshtml" />
+    <Content Include="Views\Produto\Excluir.cshtml" />
+    <Content Include="Views\Mercado\Editar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
