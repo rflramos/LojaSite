@@ -143,6 +143,7 @@
     <Content Include="Views\Produto\Editar.cshtml" />
     <Content Include="Views\Produto\Excluir.cshtml" />
     <Content Include="Views\Mercado\Editar.cshtml" />
+    <Content Include="Views\Mercado\Excluir.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

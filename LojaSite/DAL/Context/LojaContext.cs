@@ -18,9 +18,12 @@ namespace LojaSite.DAL.Context
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
+        // Dbset informa ao context quais classes terão acesso ao banco de dados
         public DbSet<Produto> Produto { get; set; }
 
         public DbSet<Mercado> Mercado { get; set; }
+
+        public DbSet<Marca> Marca { get; set; }
 
     }
 }

@@ -48,7 +48,7 @@ namespace LojaSite.Controllers
                 dal.Inserir(produto);
 
                 //envia mensagem de sucesso na view
-                @TempData["mensgem"] = "Produto cadastrado com sucesso.";
+                @TempData["mensagem"] = "Produto cadastrado com sucesso.";
 
                 //redireciona para o Index do produto
                 return RedirectToAction("Index", "Produto");
