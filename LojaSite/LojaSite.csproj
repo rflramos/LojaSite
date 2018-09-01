@@ -119,6 +119,7 @@
     <Compile Include="Controllers\MercadoController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="DAL\Context\LojaContext.cs" />
+    <Compile Include="DAL\MarcaDAL.cs" />
     <Compile Include="DAL\MercadoDAL.cs" />
     <Compile Include="DAL\ProdutoDAL.cs" />
     <Compile Include="Global.asax.cs">
@@ -144,6 +145,11 @@
     <Content Include="Views\Produto\Excluir.cshtml" />
     <Content Include="Views\Mercado\Editar.cshtml" />
     <Content Include="Views\Mercado\Excluir.cshtml" />
+    <Content Include="Views\Marca\Index.cshtml" />
+    <Content Include="Views\Marca\Consultar.cshtml" />
+    <Content Include="Views\Marca\Cadastrar.cshtml" />
+    <Content Include="Views\Marca\Editar.cshtml" />
+    <Content Include="Views\Marca\Excluir.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -153,7 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Marca\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

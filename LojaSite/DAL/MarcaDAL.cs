@@ -24,13 +24,13 @@ namespace LojaSite.DAL
             return lista;
         }
 
-        public Marca Consultar(int Id)
+        public Marca Consultar(int id)
         {
             //criar classes de contexto
             LojaContext context = new LojaContext();
 
             //recupera o objeto marca de um determinado ID
-            Marca marca = context.Marca.Find(Id);
+            Marca marca = context.Marca.Find(id);
 
             return marca;
         }
@@ -65,6 +65,8 @@ namespace LojaSite.DAL
 
             //recuperar o objeto por ID
             Marca marca = context.Marca.Find(Id);
+
+            context.Entry(marca).State = System.Data.Entity.EntityState.Deleted;
 
             //informa ao contexto que houve alteração
             context.SaveChanges();

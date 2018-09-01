@@ -18,7 +18,7 @@ namespace LojaSite.Models
         }
 
         [HttpGet]
-        public ActionResult Consultar (int Id)
+        public ActionResult Consultar(int Id)
         {
             Marca marca = new Marca();
             marca = new MarcaDAL().Consultar(Id);

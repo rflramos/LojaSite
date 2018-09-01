@@ -1,0 +1,20 @@
+﻿@model LojaSite.Models.Marca
+
+<div>
+    <h4>Marca</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nm_marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nm_marca)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_marca }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
