@@ -116,8 +116,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\MercadoController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
+    <Compile Include="DAL\ClienteDAL.cs" />
     <Compile Include="DAL\Context\LojaContext.cs" />
     <Compile Include="DAL\MarcaDAL.cs" />
     <Compile Include="DAL\MercadoDAL.cs" />
@@ -125,6 +127,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Models\Mercado.cs" />
@@ -150,6 +153,11 @@
     <Content Include="Views\Marca\Cadastrar.cshtml" />
     <Content Include="Views\Marca\Editar.cshtml" />
     <Content Include="Views\Marca\Excluir.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Cliente\Consultar.cshtml" />
+    <Content Include="Views\Cliente\Cadastrar.cshtml" />
+    <Content Include="Views\Cliente\Editar.cshtml" />
+    <Content Include="Views\Cliente\Excluir.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

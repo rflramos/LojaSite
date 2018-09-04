@@ -1,0 +1,36 @@
+﻿@model LojaSite.Models.Cliente
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nm_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nm_cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nr_rg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nr_rg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T_mercado_id_mercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_mercado_id_mercado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.Id_cliente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -25,5 +25,7 @@ namespace LojaSite.DAL.Context
 
         public DbSet<Marca> Marca { get; set; }
 
+        public DbSet<Cliente> Cliente { get; set; }
+
     }
 }

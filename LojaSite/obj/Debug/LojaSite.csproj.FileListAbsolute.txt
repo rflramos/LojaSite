@@ -69,7 +69,6 @@ C:\Users\rrosilva\source\repos\LojaSite\LojaSite\bin\System.Web.Webpages.Razor.x
 C:\Users\rrosilva\source\repos\LojaSite\LojaSite\bin\System.Web.Helpers.xml
 C:\Users\rrosilva\source\repos\LojaSite\LojaSite\bin\System.Web.Mvc.xml
 C:\Users\rrosilva\source\repos\LojaSite\LojaSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\rrosilva\source\repos\LojaSite\LojaSite\obj\Debug\LojaSite.csprojAssemblyReference.cache
 C:\Users\rrosilva\source\repos\LojaSite\LojaSite\obj\Debug\LojaSite.csproj.CoreCompileInputs.cache
 C:\Users\rrosilva\source\repos\LojaSite\LojaSite\obj\Debug\LojaSite.csproj.CopyComplete
 C:\Users\rrosilva\source\repos\LojaSite\LojaSite\obj\Debug\LojaSite.dll

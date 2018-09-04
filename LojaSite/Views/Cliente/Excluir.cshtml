@@ -1,0 +1,42 @@
+﻿@model LojaSite.Models.Cliente
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nm_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nm_cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nr_rg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nr_rg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T_mercado_id_mercado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_mercado_id_mercado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

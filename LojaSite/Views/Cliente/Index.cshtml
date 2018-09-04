@@ -1,0 +1,39 @@
+﻿@model IEnumerable<LojaSite.Models.Cliente>
+
+<p>
+    @Html.ActionLink("Create New", "Cadastrar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nm_cliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nr_rg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.T_mercado_id_mercado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nm_cliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nr_rg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.T_mercado_id_mercado)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.Id_cliente }) |
+            @Html.ActionLink("Consultar", "Consultar", new { id=item.Id_cliente }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id=item.Id_cliente })
+        </td>
+    </tr>
+}
+
+</table>
